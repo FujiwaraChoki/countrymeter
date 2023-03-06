@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Country Code Finder</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .container {
+      margin-top: 80px;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      animation-name: fadeIn;
+      animation-duration: 0.5s;
+      animation-timing-function: ease-in-out;
+    }
+
+    input[type=submit] {
+      background-color: #28a745;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 10px 20px;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    input[type=submit]:hover {
+      background-color: #218838;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-6">
+        <h1 class="mb-4 text-center">Find Country by Code</h1>
+        <form>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Enter Country Code" id="countryCodeInput" required>
+            <button type="submit" class="btn btn-primary" id="searchButton">Search</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+      <div class="col-6">
+        <div class="card">
+          <div class="card-header">
+            <h5 class="mb-0">Result</h5>
+          </div>
+          <div class="card-body">
+            <div class="row justify-content-center">
+              <img class="col-2" id="flagOutput" />
+              <div class="col-4" id="countryNameOutput"></div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-6"><b>Currency:</b> <span id="currencyOutput"></span></div>
+              <div class="col-6"><b>Capital:</b> <span id="capitalOutput"></span></div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-6"><b>Official Languages:</b> <span id="languagesOutput"></span></div>
+              <div class="col-6"><b>Time Zone:</b> <span id="timeZoneOutput"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
