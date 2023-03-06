@@ -14,8 +14,7 @@ The following technologies were used to build this application:
 ## Getting Started
 To get started with the application, simply clone the repository to your local machine and open the index.html file in your preferred web browser.
 
-```bashsh
-Copy code
+```bash
 git clone https://github.com/FujiwaraChoki/countrymeter.git
 cd countrymeter
 npm i
